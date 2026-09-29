@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101326">
+  <meta name="description" content="A little moonlit story, made just for you.">
+  <title>A Little Story | A Romantic Proposal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="film" id="film" aria-label="A moonlit romantic story">
+    <div class="sky" aria-hidden="true">
+      <div class="moon"><span></span><i></i></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="cloud cloud-three"></div>
+      <div class="far-hills"></div><div class="near-hills"></div><div class="city" id="city"></div><div class="path"></div>
+    </div>
+    <canvas class="particles" id="particles" aria-hidden="true"></canvas>
+    <div class="letterbox letterbox-top" aria-hidden="true"></div><div class="letterbox letterbox-bottom" aria-hidden="true"></div><div class="film-grain" aria-hidden="true"></div>
+    <div class="figures" id="figures" aria-hidden="true">
+      <div class="person boy" id="boy"><div class="legs"><i class="leg leg-back"></i><i class="leg leg-front"></i></div><div class="body"><i class="shirt-seam"></i><i class="arm arm-left"></i><i class="arm arm-right"></i><i class="hand"></i><i class="ring"><b></b></i></div><div class="head"><i class="hair"></i><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="cheek cheek-left"></i><i class="cheek cheek-right"></i><i class="smile"></i></div></div>
+      <div class="person girl" id="girl"><div class="legs"><i class="leg leg-back"></i><i class="leg leg-front"></i></div><div class="body"><i class="dress-fold"></i><i class="arm arm-left"></i><i class="arm arm-right"></i></div><div class="head"><i class="hair"></i><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="cheek cheek-left"></i><i class="cheek cheek-right"></i><i class="smile"></i><i class="hair-clip"></i></div></div>
+    </div>
+    <div class="scene-wash" aria-hidden="true"></div>
+    <header class="topline"><span class="film-title">A little story</span><button class="sound-button" id="soundButton" type="button" aria-label="Mute music" title="Mute music"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="soundLabel">Music on</span></button></header>
+    <div class="caption" id="caption" aria-live="polite"></div>
+    <section class="proposal" id="proposal" aria-labelledby="proposalTitle" aria-hidden="true"><p class="eyebrow">One question, a thousand tomorrows</p><h1 id="proposalTitle">Will You Be Mine<br><span>Forever?</span></h1><p class="forever-line">♥ Forever Starts Here ♥</p><button class="yes-button" id="yesButton" type="button"><span>YES</span><i aria-hidden="true">♥</i></button></section>
+    <section class="ending" id="ending" aria-live="polite" aria-hidden="true"><p class="ending-kicker">The beginning of everything</p><h2>You just made me<br>the happiest person alive.</h2><p class="ending-love">♥ I Love You Forever ♥</p></section>
+    <div class="progress-track" aria-hidden="true"><i id="progress"></i></div>
+    <div class="bottomline"><span id="sceneCount">A story in the stars</span><button id="skipButton" type="button">Skip story <span aria-hidden="true">↗</span></button></div>
+    <section class="start-screen" id="startScreen" aria-label="Start the story"><div class="start-copy"><span class="start-mark" aria-hidden="true">✦</span><p class="eyebrow">A little story beneath the stars</p><h1>Some stories<br>just happen.</h1><p class="start-note">And some feel like coming home.</p><button class="start-button" id="startButton" type="button"><span>Begin our story</span><i aria-hidden="true">→</i></button><p class="audio-note" id="audioNote">Sound on for the full moment</p></div><div class="start-orbit" aria-hidden="true"><span></span><i>♥</i><b></b></div></section>
+    <audio id="music" src="assets/moonlit_score.wav" preload="auto" loop></audio><p class="sr-only" id="status" role="status"></p>
+  </main>
+</body>
+</html>
