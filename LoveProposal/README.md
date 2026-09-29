@@ -2,6 +2,18 @@
 
 A custom-drawn Pygame mini love story, built from layered city-night scenery, hand-drawn characters, camera movement, glowing hearts, fireworks, falling petals, and original procedural audio. It runs as a 1280 × 720 fullscreen experience at 60 FPS; there are no Tkinter windows or standard GUI widgets.
 
+## GitHub Pages (web version)
+
+The static browser version is at the repository root in `index.html`, `style.css`, and `script.js`. It needs no build step or server.
+
+In the repository's **Settings → Pages**, use:
+
+- **Source:** Deploy from a branch
+- **Branch:** `main`
+- **Folder:** `/ (root)`
+
+Save the settings and open the Pages URL shown there after deployment finishes. Keep the root `assets/` directory in the repository; the page loads its soundtrack with the relative path `assets/moonlit_score.wav`.
+
 ## Run on Windows
 
 1. Install Python 3.10+.
